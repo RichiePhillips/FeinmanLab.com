@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice AI • Feinman Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f8f5f0] text-neutral-900 overflow-x-hidden">
+
+    <!-- FULL NAVBAR (same as index.html) -->
+    <nav class="fixed top-0 left-0 right-0 bg-[#f8f5f0]/95 backdrop-blur-md border-b border-neutral-200 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-amber-400 rounded-2xl flex items-center justify-center text-2xl font-bold heading-font text-neutral-900">F</div>
+                <span class="text-3xl font-semibold tracking-tighter heading-font">Feinman</span>
+            </a>
+            
+            <div class="flex flex-wrap items-center gap-x-6 md:gap-x-9 text-sm font-medium">
+                <a href="index.html#expertise" class="hover:text-amber-600 transition-colors">Expertise</a>
+                <a href="index.html#pipeline" class="hover:text-amber-600 transition-colors">Our Pipeline</a>
+                <a href="index.html#solutions" class="hover:text-amber-600 transition-colors">Solutions</a>
+                <a href="index.html#research" class="hover:text-amber-600 transition-colors">Research</a>
+                <a href="index.html#portfolio" class="hover:text-amber-600 transition-colors">Portfolio</a>
+                <a href="index.html#careers" class="hover:text-amber-600 transition-colors">Careers</a>
+                <a href="voice-ai.html" class="hover:text-amber-600 transition-colors">Voice AI</a>
+                <a href="talk-to-data.html" class="hover:text-amber-600 transition-colors">Talk to Data</a>
+            </div>
+            
+            <a href="index.html#contact" 
+               class="px-8 py-3.5 bg-neutral-900 text-white rounded-3xl text-sm font-semibold hover:bg-amber-400 hover:text-neutral-900 transition-all">
+                Get In Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="pt-28 pb-16 bg-neutral-900 text-white min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <span class="uppercase text-amber-400 text-sm font-medium tracking-widest">Specialty</span>
+                <h1 class="hero-text text-6xl md:text-7xl leading-none font-semibold tracking-tighter heading-font mb-8 text-white">
+                    Complex Multilingual<br>Voice AI Agents
+                </h1>
+                <p class="text-2xl text-neutral-300 max-w-lg mb-12">
+                    Real-time streaming • Emotion detection • Long-context memory • 20+ languages.<br>
+                    Production-ready on-prem or cloud deployment.
+                </p>
+                <a href="index.html#contact" class="px-10 py-5 bg-amber-400 text-neutral-900 rounded-3xl font-semibold text-xl inline-block hover:scale-105 transition-transform">
+                    Build your voice agent today
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- KEY CAPABILITIES -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading-font font-semibold tracking-tighter text-center mb-12">Voice AI That Actually Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#f8f5f0] p-8 rounded-3xl">
+                    <i class="fa-solid fa-microphone text-5xl text-amber-500 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Real-Time Streaming</h3>
+                    <p class="text-neutral-600">Sub-300ms latency with continuous conversation flow. Perfect for live customer support and internal tools.</p>
+                </div>
+                <div class="bg-[#f8f5f0] p-8 rounded-3xl">
+                    <i class="fa-solid fa-face-smile text-5xl text-amber-500 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Emotion & Intent Detection</h3>
+                    <p class="text-neutral-600">Advanced sentiment analysis and intent understanding in 20+ languages including low-resource ones.</p>
+                </div>
+                <div class="bg-[#f8f5f0] p-8 rounded-3xl">
+                    <i class="fa-solid fa-memory text-5xl text-amber-500 mb-6"></i>
+                    <h3 class="text-2xl font-semibold mb-3">Long-Context Memory</h3>
+                    <p class="text-neutral-600">Remembers entire conversations, customer history, and business rules across sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE CASES -->
+    <section class="py-20 bg-[#f8f5f0]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading-font font-semibold tracking-tighter text-center mb-12">Enterprise Voice AI Use Cases</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+                    <div class="text-amber-500 text-sm font-medium mb-2">CUSTOMER SUPPORT</div>
+                    <h3 class="text-2xl font-semibold">24/7 Multilingual Support Agents</h3>
+                    <p class="mt-4 text-neutral-600">Handle thousands of calls simultaneously with perfect context retention.</p>
+                </div>
+                <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+                    <div class="text-amber-500 text-sm font-medium mb-2">FINANCE</div>
+                    <h3 class="text-2xl font-semibold">Real-Time Fraud Detection Voice Agents</h3>
+                    <p class="mt-4 text-neutral-600">Detect suspicious activity during calls with 98%+ accuracy.</p>
+                </div>
+                <div class="bg-white border border-neutral-200 rounded-3xl p-8">
+                    <div class="text-amber-500 text-sm font-medium mb-2">INTERNAL OPERATIONS</div>
+                    <h3 class="text-2xl font-semibold">Employee Voice Assistants</h3>
+                    <p class="mt-4 text-neutral-600">Automate HR queries, IT support, and meeting transcription in multiple languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY FEINMAN -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl heading-font font-semibold tracking-tighter mb-8">Why Feinman Lab for Voice AI</h2>
+            <div class="max-w-2xl mx-auto text-xl text-neutral-600">
+                We don’t just fine-tune existing models — we build production-grade voice systems from the ground up with your private data, full on-prem options, and enterprise security.
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-28 bg-neutral-900 text-white">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <h2 class="heading-font text-6xl font-semibold tracking-tighter">Ready for voice AI that actually sounds human?</h2>
+            <a href="index.html#contact" class="mt-12 inline-block px-16 py-7 bg-amber-400 text-neutral-900 rounded-3xl text-2xl font-semibold hover:scale-105 transition-transform">
+                Start your voice AI project
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER (same as index.html) -->
+    <footer class="bg-[#f8f5f0] border-t border-neutral-200 py-20">
+        <div class="max-w-7xl mx-auto px-6 text-sm">
+            <div class="flex flex-col md:flex-row justify-between gap-y-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-x-3">
+                        <div class="w-7 h-7 bg-amber-400 rounded-2xl flex items-center justify-center text-xl font-bold heading-font">F</div>
+                        <span class="text-2xl font-semibold tracking-tighter heading-font">Feinman</span>
+                    </a>
+                    <div class="mt-6 text-neutral-500">Frontier Applied AI Research Lab<br>San Francisco, California, USA</div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-x-16">
+                    <div>
+                        <div class="font-medium mb-4">Company</div>
+                        <div class="space-y-2 text-neutral-500">
+                            <a href="index.html#expertise" class="hover:text-neutral-900">Expertise</a><br>
+                            <a href="index.html#research" class="hover:text-neutral-900">Research</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-medium mb-4">Solutions</div>
+                        <div class="space-y-2 text-neutral-500">
+                            <div>LLM / VLM Training</div>
+                            <div>Voice Agents</div>
+                            <div>Computer Vision</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-right">
+                    <div class="text-xs text-neutral-400">© 2026 Feinman Lab. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
